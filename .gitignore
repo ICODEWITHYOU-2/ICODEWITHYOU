@@ -1,0 +1,55 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (never commit real secrets — .env.example is the template and IS tracked)
+.env
+.env.local
+.env*.local
+!.env.example
+
+# vercel
+.vercel/
+
+# cloudflare
+.wrangler/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# screenshot baselines used for visual regression checks — never committed
+.baseline/
+
+# unrelated personal files found sitting in this folder — not part of the
+# website, excluded so they don't get swept into a public commit by mistake
+heart_popup.py
+__pycache__/
+*.pyc
